@@ -1,5 +1,5 @@
 {% extends 'base.html'%}
-{% block title %}文章详情{% endblock %}
+{% block title %}Article information{% endblock %}
 <link rel="stylesheet" href="{{ url_for('static',filename='CSS/article.css') }}">
 {% block head %}
 
@@ -30,9 +30,9 @@
 
     <div class="article_vote">
         <p class="article_content" aid="{{ article.id }}"></p>
-            <span style="background-color: #434F77;"  class="badge badge-info" id="upvote"> 赞</span>
+            <span style="background-color: #434F77;"  class="badge badge-info" id="upvote"> Good</span>
           <span id="unlike">{{article.likeNumber}}</span>
-          <span style="background-color: #0079D7;"  class="badge badge-info" id="downvote" >  灭 </span>
+          <span style="background-color: #0079D7;"  class="badge badge-info" id="downvote" >  Bad </span>
           <span id="unlike">{{article.unlikeNumber}}</span>
                <span  class="badge badge-info" id="tip"  style="color:red;"></span>
     </div>
